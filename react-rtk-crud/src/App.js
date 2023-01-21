@@ -14,8 +14,8 @@ import {
 } from "reactstrap";
 
 const data = [
-  { id: 1, tipo_doc: "Naruto", documento: "Naruto",nombre: "Naruto",apellido: "Naruto",hobbi: "Naruto" },
-  { id: 2, tipo_doc: "Goku", documento: "Dragon Ball",nombre: "Naruto",apellido: "Naruto",hobbi: "Naruto" },
+  { id: 1, tipo_doc: "DNI", documento: "28550763",nombre: "Gustavo",apellido: "Palione",hobbie: "varios" },
+  { id: 2, tipo_doc: "DNI", documento: "27038079",nombre: "Vale",apellido: "Gra",hobbie: "varios" },
 
 ];
 
@@ -30,7 +30,7 @@ class App extends React.Component {
       documento: "",
       nombre: "",
       apellido: "",
-      hobbi: ""
+      hobbie: ""
     },
   };
 
@@ -64,7 +64,7 @@ class App extends React.Component {
         arreglo[contador].documento = dato.documento;
         arreglo[contador].nombre = dato.nombre;
         arreglo[contador].apellido = dato.apellido;
-        arreglo[contador].hobbi = dato.hobbi;
+        arreglo[contador].hobbie = dato.hobbi;
       }
       contador++;
     });
@@ -116,11 +116,11 @@ class App extends React.Component {
             <thead>
               <tr>
                 <th>ID</th>
-                <th>tipo_doc</th>
-                <th>documento</th>
-                <th>nombre</th>
-                <th>apellido</th>
-                <th>hobbi</th>
+                <th>Tipo_doc</th>
+                <th>Documento</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Hobbie</th>
                 <th>Acción</th>
               </tr>
             </thead>
@@ -133,7 +133,7 @@ class App extends React.Component {
                   <td>{dato.documento}</td>
                   <td>{dato.nombre}</td>
                   <td>{dato.apellido}</td>
-                  <td>{dato.hobbi}</td>
+                  <td>{dato.hobbie}</td>
                   <td>
                     <Button
                       color="primary"
@@ -222,7 +222,7 @@ class App extends React.Component {
 
             <FormGroup>
               <label>
-                hobbi: 
+                hobbie: 
               </label>
               <input
                 className="form-control"
@@ -321,7 +321,7 @@ class App extends React.Component {
 
             <FormGroup>
               <label>
-              hobbi: 
+              hobbie: 
               </label>
               <input
                 className="form-control"
